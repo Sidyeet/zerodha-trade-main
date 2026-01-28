@@ -1,0 +1,11 @@
+# Ignore environment secrets
+.env
+.env.token
+
+# Ignore installed dependencies
+node_modules/
+
+# Ignore VS Code local settings
+.vscode/
+
+dist/

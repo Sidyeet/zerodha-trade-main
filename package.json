@@ -1,0 +1,39 @@
+{
+  "name": "zerodha-trade",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "login": "node --loader ts-node/esm src/auth/getLoginURL.ts",
+    "session": "node --loader ts-node/esm src/auth/generateSession.ts",
+    "trade": "node --loader ts-node/esm src/index.ts",
+    "mcp": "node --loader ts-node/esm src/index.ts",
+    "app": "node dist/src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A Python-based trading bot using Zerodha's Kite Connect API.  \r This bot automates session generation and enables live order execution on the NSE.",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "dotenv": "^17.2.0",
+    "kiteconnect": "^5.0.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shetharya/zerodha-trading-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shetharya/zerodha-trading-bot/issues"
+  },
+  "homepage": "https://github.com/shetharya/zerodha-trading-bot#readme"
+}
